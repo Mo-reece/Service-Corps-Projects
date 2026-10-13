@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rbac
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update   # creates the "users" table on first start
+    open-in-view: false
+
+server:
+  error:
+    include-message: always
+
+# HMAC key used to sign tokens (min 32 characters). Override with the JWT_SECRET env var.
+jwt:
+  secret: ${JWT_SECRET:dev-only-secret-change-me-0123456789abcdef}

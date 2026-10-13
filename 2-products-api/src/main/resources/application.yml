@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/products
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create                     # rebuild the table on every start (demo data)
+    defer-datasource-initialization: true  # run data.sql AFTER the table exists
+    open-in-view: false
+  sql:
+    init:
+      mode: always                         # always load data.sql
+  data:
+    web:
+      pageable:
+        max-page-size: 100                 # stop clients requesting size=1000000
+        serialization-mode: via-dto        # clean, stable JSON for Page responses
+
+server:
+  port: 8081
+  error:
+    include-message: always

@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: rbac
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 3s
+      retries: 10
+
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/rbac
+    depends_on:
+      db:
+        condition: service_healthy
