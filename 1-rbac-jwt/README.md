@@ -6,7 +6,7 @@ checked against the user's role (`ADMIN`, `USER` or `GUEST`). Users and roles ar
 
 ## 🎥 Video walkthrough
 
-**▶ [Watch the 5-minute code walkthrough](https://REPLACE-WITH-YOUR-VIDEO-LINK)**
+**▶ [Watch the project 1 walkthrough](https://www.youtube.com/watch?v=wfEX4y6hwto)**
 
 ## Features
 

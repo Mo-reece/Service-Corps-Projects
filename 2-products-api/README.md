@@ -6,7 +6,7 @@ fields** and **filtering by category and price range**, and all three can be com
 
 ## 🎥 Video walkthrough
 
-**▶ [Watch the 5-minute code walkthrough](https://REPLACE-WITH-YOUR-VIDEO-LINK)**
+**▶ [Watch the project 2 walkthrough](https://www.youtube.com/watch?v=QqoFnPxypn8)**
 
 ## Features
 
